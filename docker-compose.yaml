@@ -1,0 +1,12 @@
+services:
+  label-studio:
+    image: heartexlabs/label-studio:latest
+    ports:
+      - "9000:8080"
+    volumes:
+      - ./labeldata:/label-studio/data
+    environment:
+      LOCAL_FILES_SERVING_ENABLED: "true"
+      LOCAL_FILES_DOCUMENT_ROOT: /label-studio/data
+    stdin_open: true
+    tty: true

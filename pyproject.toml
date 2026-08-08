@@ -1,0 +1,18 @@
+[project]
+name = "video-detection"
+version = "0.1.0"
+description = "Video Detection"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "insightface>=0.7.3",  # buffalo_l: RetinaFace detect + ArcFace identity
+    "langchain-core>=1.5.3",
+    "langchain-openai>=1.1.0",
+    "langgraph>=1.2.10",
+    "onnxruntime>=1.20",  # <1.19 pins numpy<2 and conflicts with opencv
+    "opencv-python>=5.0.0.93",
+    "pydantic-settings>=2.14.2",
+    "streamlit>=1.61.0",
+    "streamlit-webrtc>=0.76.3",
+    "watchdog>=6.0.0",
+]

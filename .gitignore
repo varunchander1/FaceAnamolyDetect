@@ -1,0 +1,29 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Secrets. Settings reads .env, so this must never be committed.
+.env
+.env.*
+!.env.example
+
+# Face enrolment: photos of real people and the embeddings built from them.
+# Biometric data — keep it out of the repo.
+faces/
+gallery.npz
+*.npz
+
+# Streamlit
+.streamlit/
+.codegraph/
+.playwright-mcp/
+labeldata/
+dataset/
+faces/
