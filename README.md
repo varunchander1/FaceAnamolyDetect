@@ -91,12 +91,6 @@ would otherwise be alerted on as a stranger.
 
 **From the shell** — arrange photos yourself and build:
 
-```
-faces/
-    Pratik Panchal/     5-20 varied photos
-    Karishma Panchal/   5-20 varied photos
-```
-
 ```bash
 make gallery      # == uv run python tools/build_gallery.py --faces-dir faces
 ```
